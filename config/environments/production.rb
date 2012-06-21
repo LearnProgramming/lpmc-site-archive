@@ -1,4 +1,4 @@
-Lpmc::Application.configure do
+LpmcSite::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -20,7 +20,7 @@ Lpmc::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  # Defaults to Rails.root.join("public/assets")
+  # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files
