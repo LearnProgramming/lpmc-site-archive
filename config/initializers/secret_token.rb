@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Lpmc::Application.config.secret_token = 'ee40825f155bfcf9059cbcb3dfb2581bcb5c52ad6b92fd285178060f43a3f2a823382c9f5e69aa0868539fa7e313173b3dbfd91961edd883e704dbdfce375cee'
+LpmcSite::Application.config.secret_token = 'af993ef6a65ed024523cc24de9092ca9ae6161abc3024d32342449416f1fb3e36f84fc65cb6a91ae246c016ac267095bca80e1f14394b701efcaec80713cbfde'
