@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Lpmc::Application.load_tasks
+LpmcSite::Application.load_tasks
