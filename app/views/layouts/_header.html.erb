@@ -1,13 +1,19 @@
 <header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "Home", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home",    'home' %></li>
-              <li><%= link_to "About",    'about' %></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "Home", '#', id: "logo" %>
+      <nav>
+      <ul class="nav pull-right">
+        <li><%= link_to "Home", 'home' %></li>
+        <li><%= link_to "About", 'about' %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to current_user.email, edit_user_registration_path  %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% end %>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</header>
