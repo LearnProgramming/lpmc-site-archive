@@ -1,1 +1,2 @@
-rvm use ruby-1.9.3
+RVM_STRING="rvm use ruby-1.9.3-p125@lpmc --create --verbose"
+[ -e './.rvmrc_local' ] && source './.rvmrc_local' || $RVM_STRING
